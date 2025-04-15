@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 24, "column": 0}, "map": {"version":3,"sources":["file:///Users/boarnerges/Documents/Dev/Personal-Project/Admin-Dashboard/src/components/Navbar.tsx"],"sourcesContent":["import Link from \"next/link\";\nimport { Avatar, AvatarImage, AvatarFallback } from \"@/components/ui/avatar\";\nimport logo from \"/logo.jpeg\";\nimport Image from \"next/image\";\n\nconst Navbar = () => {\n  return (\n    <div className=\"bg-primary dark:bg-slate-700 py-2 px-5 flex justify-between\">\n      <Link href=\"/\">\n        <Image\n          src={logo}\n          className=\"h-[300px] w-[300px]\"\n          alt=\"image\"\n          width={40}\n          height={40}\n        />\n      </Link>\n    </div>\n  );\n};\n\nexport default Navbar;\n"],"names":[],"mappings":";;;;AAAA;;;;;;AAGA;;;;;AAEA,MAAM,SAAS;IACb,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC,4JAAA,CAAA,UAAI;YAAC,MAAK;sBACT,cAAA,8OAAC,6HAAA,CAAA,UAAK;gBACJ,KAAK;gBACL,WAAU;gBACV,KAAI;gBACJ,OAAO;gBACP,QAAQ;;;;;;;;;;;;;;;;AAKlB;uCAEe","debugId":null}},
+    {"offset": {"line": 73, "column": 0}, "map": {"version":3,"sources":["file:///Users/boarnerges/Documents/Dev/Personal-Project/Admin-Dashboard/src/app/page.tsx"],"sourcesContent":["import Navbar from \"@/components/Navbar\";\nexport default function Home() {\n  return (\n    <>\n      <Navbar />\n      <h1 className=\"text-2xl text-red-500\">Dashboard</h1>\n    </>\n  );\n}\n"],"names":[],"mappings":";;;;AAAA;;;AACe,SAAS;IACtB,qBACE;;0BACE,8OAAC,4HAAA,CAAA,UAAM;;;;;0BACP,8OAAC;gBAAG,WAAU;0BAAwB;;;;;;;;AAG5C","debugId":null}}]
+}
