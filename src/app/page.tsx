@@ -1,10 +1,11 @@
+import AnalyticsChart from "@/components/dashboard/AnalyticsChart";
 import DashbaordCard from "@/components/dashboard/DashboardCard";
 import PostsTable from "@/components/posts/PostsTable";
 import { Folder, MessageCircle, Newspaper, Users } from "lucide-react";
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col md:flex-row overflow-x-auto justify-center gap-5 mb-5 ml-5 mt-5 item ">
+      <div className="flex flex-col md:flex-row justify-between gap-5 mb-5 ml-5 mt-5 item ">
         <DashbaordCard
           title="Posts"
           count={100}
@@ -26,6 +27,7 @@ export default function Home() {
           icon={<MessageCircle className="text-slate-500" size={22} />}
         />
       </div>
+      <AnalyticsChart />
       <PostsTable title="Latest Posts" limit={5} />
     </>
   );
