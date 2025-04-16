@@ -4,7 +4,7 @@ import PostsTable from "@/components/posts/PostsTable";
 import { Folder, MessageCircle, Newspaper, Users } from "lucide-react";
 export default function Home() {
   return (
-    <div className="mx-auto">
+    <div className="mx-auto container px-6">
       <div className="flex flex-col md:flex-row justify-between gap-5  mb-5 mt-5">
         <DashbaordCard
           title="Posts"
