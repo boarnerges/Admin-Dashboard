@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const DashbaordCard = ({ title, icon, count }) => {
   return (
-    <Card className="bg-slate-100 h-25 w-fit dark:bg-slate-800 p-4 pb-0">
+    <Card className="bg-slate-100 h-25 dark:bg-slate-800 p-4 pb-0">
       <CardContent>
         <h3 className="text-xl text-center mb-4 font-bold text-slate-500 dark:text-slate-200">
           {title}

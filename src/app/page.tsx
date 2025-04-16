@@ -4,8 +4,8 @@ import PostsTable from "@/components/posts/PostsTable";
 import { Folder, MessageCircle, Newspaper, Users } from "lucide-react";
 export default function Home() {
   return (
-    <>
-      <div className="flex flex-col md:flex-row justify-between gap-5 mb-5 ml-5 mt-5 item ">
+    <div className="mx-auto">
+      <div className="flex flex-col md:flex-row justify-between gap-5  mb-5 mt-5">
         <DashbaordCard
           title="Posts"
           count={100}
@@ -29,6 +29,6 @@ export default function Home() {
       </div>
       <AnalyticsChart />
       <PostsTable title="Latest Posts" limit={5} />
-    </>
+    </div>
   );
 }
