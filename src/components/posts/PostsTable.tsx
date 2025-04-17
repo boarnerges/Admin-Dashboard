@@ -52,7 +52,7 @@ const PostsTable = ({ limit, title }: PostsTableProps) => {
               <TableCell className="text-right hidden md:table-cell">
                 {post.date}
               </TableCell>
-              <TableCell>
+              <TableCell className="text-right">
                 <Link href={`/posts/edit/${post.id}`}>
                   <Button className="bg-blue-500 hover:bg-blue-700">
                     Edit
