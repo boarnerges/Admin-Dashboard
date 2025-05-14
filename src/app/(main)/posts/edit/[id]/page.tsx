@@ -16,7 +16,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import posts from "@/../data/post";
-import { Toaster } from "@/components/ui/sonner";
 import { toast } from "sonner";
 
 const formSchema = z.object({
@@ -34,11 +33,11 @@ const formSchema = z.object({
   }),
 });
 
-interface PostEditPageProps {
+type PostEditPageProps = {
   params: {
     id: string;
   };
-}
+};
 
 const PostEditPage = ({ params }: PostEditPageProps) => {
   const post = posts.find((post) => post.id === params.id);
