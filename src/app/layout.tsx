@@ -18,23 +18,16 @@ export const metadata: Metadata = {
   title: "Boarnerges ",
   description: "Admin Dashboard",
 };
-
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem={true}
-          storageKey="dashboard-theme"
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
-          <Toaster />
         </ThemeProvider>
       </body>
     </html>
