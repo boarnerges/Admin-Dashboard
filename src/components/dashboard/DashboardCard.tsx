@@ -1,6 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
 
-const DashbaordCard = ({ title, icon, count }) => {
+type DashboardCardProps = {
+  title: string;
+  icon: React.ReactNode;
+  count: number;
+};
+
+const DashbaordCard = ({ title, icon, count }: DashboardCardProps) => {
   return (
     <Card className="bg-slate-100 h-25 dark:bg-slate-800 p-4 pb-0">
       <CardContent>
